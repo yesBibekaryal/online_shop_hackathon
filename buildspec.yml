@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Logging in to Docker Registry...
       - echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
-      - IMAGE_REPO_NAME="aws-cicd-app"
+      - IMAGE_REPO_NAME="aws-cicd-onlineshop-app"
       - IMAGE_NAME="kubebibek/$IMAGE_REPO_NAME"
 
   build:
